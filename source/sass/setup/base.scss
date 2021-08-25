@@ -2,8 +2,11 @@
 body {
   font-family: $font-stack;
   font-weight: 400;
-  color: $dark-grey;
+  color: $basic-dark;
 
+}
+page-body {
+  color: $basic-dark;
 }
 
 ul {
@@ -22,3 +25,4 @@ a {
   display: block;
   text-decoration: none;
 }
+
