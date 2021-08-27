@@ -1,0 +1,44 @@
+.font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("fonts/pt-sans-narrow-bold.woff2") format("woff2"),
+    url("fonts/pt-sans-narrow-bold.woff") format("woff");
+}
+
+.header {
+  font-family: $font-stack;
+  background-color: $basic-white;
+}
+
+.header__title {
+  font-size: 24px;
+
+}
+
+.header__top {
+  background-color: $basic-white;
+  font-size: 17px;
+}
+
+.header__logo {
+  background-color: $basic-white;
+}
+
+.desctop-active {
+  font-size: 24px;
+}
+
+.site-list__item {
+  font-size: 17px;
+}
+
+.main-nav__list {
+  list-style: none;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+}

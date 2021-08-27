@@ -1,0 +1,107 @@
+.section-title {
+  font-size: 25px;
+}
+
+.section-subtitle {
+  color: $basic-green;
+  font-size: 17px;
+}
+
+.image-description__tex {
+  color: rgba(68, 68, 68, 1);
+  font-size: 15px;
+}
+
+.top-product__table {
+  font-size: 15px;
+  color: $basic-grey;
+  border-collapse: collapse;
+  border: 1px solid rgba(236, 236, 236, 1);
+
+}
+
+.products-secton__item {
+  font-size: 19px;
+  color: $basic-white;
+  background-color: $basic-green;
+}
+
+.image-catalog__selling-photo {
+  display: block;
+  margin: 0 auto;
+  width: 260px;
+  height: 315px;
+}
+
+.top-product__price {
+  display: block;
+  margin: 0 auto;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.button button {
+  border: 2px solid #444444;
+  background: #FFFFFF;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+}
+
+.about-us__list {
+  font-weight: bold;
+  font-size: 17px;
+  color: #000000;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 25px;
+  color: #000000;
+}
+
+.slider__text {
+  font-weight: normal;
+  font-size: 15px;
+  color: #000000;
+}
+
+.slider__autor {
+  color: #000000;
+}
+
+.autor__name {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.autor__email {
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.pagination {
+  display: block;
+  margin: 0 auto;
+  background: #FFFFFF;
+
+}
+
+.main-nav__toggle {
+  width: 260px;
+  height: 52px;
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+}
+
+.contacts__info{
+  font-weight: normal;
+  font-size: 14px;
+}
+
