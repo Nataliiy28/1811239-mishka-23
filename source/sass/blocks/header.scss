@@ -1,11 +1,11 @@
 .font-face {
   font-family: "Open Sans";
-  font-weight: bold;
+  font-weight: regular;
   font-style: normal;
   font-display: swap;
   src:
-    url("fonts/pt-sans-narrow-bold.woff2") format("woff2"),
-    url("fonts/pt-sans-narrow-bold.woff") format("woff");
+    url("") format("woff2"),
+    url("") format("woff");
 }
 
 .header {
@@ -38,7 +38,16 @@
 .main-nav__list {
   list-style: none;
   font-size: 19px;
-  font-weight: 700;
+  font-weight: 700px;
   line-height: 24px;
   letter-spacing: 0px;
+}
+
+.page-header_catalog {
+  list-style: none;
+}
+
+.product-img {
+  width: 260px;
+  height: 195px;
 }
