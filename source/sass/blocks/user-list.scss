@@ -1,12 +1,10 @@
-.main-nav__list {
+.user-list__item {
+  display: block;
+  align-items: center;
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $basic-dark;
-}
-
-.main-nav__toggle {
-  width: 20px;
-  height: 14px;
 }
