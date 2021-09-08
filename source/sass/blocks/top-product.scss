@@ -7,11 +7,13 @@
 }
 
 .top-product__price {
+  color: #444444;
   display: block;
   margin: 0 auto;
   font-size: 17px;
   font-weight: bold;
   margin-top: 26px;
+  text-align: center;
 }
 
 
@@ -22,4 +24,7 @@
   display: block;
   margin: 0 auto;
   text-transform: uppercase;
+  width: 260px;
+  height: 52px;
+  margin-top: 25px;
 }

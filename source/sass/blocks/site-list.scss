@@ -1,9 +1,18 @@
-.site-list{
+.site-list {
   list-style: none;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $basic-dark;
+}
 
+.site-list__link {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $basic-dark;
 }
