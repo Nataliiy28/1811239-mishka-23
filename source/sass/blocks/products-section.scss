@@ -3,28 +3,17 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  background-color: $basic-green;
   width: 0;
   margin: 40px;
   padding: 5px;
   display: flex;
 }
 
-.products-section__item:first-child {
-  width: 100%;
-  background-color: $basic-green;
-  color: $basic-white;
-}
-
 .products-section__link:last-child {
   width: 100%;
-  background-color: $warm-dirty-green;
   color: $basic-white;
 }
 
-.products-section-second__item {
-background-color:$medium-dirty-green ;
-}
 
 .products-section__item {
   display: block;
@@ -36,8 +25,15 @@ background-color:$medium-dirty-green ;
   font-size: 19px;
 }
 
+.products-section__item:first-child {
+  background-color: $basic-green;
+  color: $basic-white;
+}
+
+.products-section-second__item {
+  background-color: $medium-dirty-green;
+}
+
 .products-section__img {
-  margin: 0px;
-  padding: 0;
-  padding-left: 180px;
+  margin-left: 75px;
 }
