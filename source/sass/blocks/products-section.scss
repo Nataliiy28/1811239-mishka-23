@@ -9,31 +9,42 @@
   display: flex;
 }
 
-.products-section__link:last-child {
+.products-section__link {
   width: 100%;
   color: $basic-white;
+  text-align: center;
+  width: 130px;
+  height: 48px;
 }
 
 
 .products-section__item {
   display: block;
   width: 100%;
+  height: 103px;
   align-items: center;
   text-align: center;
   background-color: $warm-dirty-green;
   color: $basic-white;
+  font-weight: bold;
   font-size: 19px;
+  line-height: 24px;
+
 }
 
 .products-section__item:first-child {
+  display: block;
   background-color: $basic-green;
   color: $basic-white;
 }
 
-.products-section-second__item {
+.products-section__item:last-child {
   background-color: $medium-dirty-green;
+  display: block;
 }
 
 .products-section__img {
-  margin-left: 75px;
+  margin-bottom: 23px;
+  margin-top: -19px;
+  margin-left: 223px;
 }
