@@ -13,10 +13,21 @@
   background-color: $basic-white;
 }
 
-.header__title {
+.header-wrap__title {
+  display: inline-block;
   font-size: 24px;
   text-align: center;
-  height: 90px;
+  position: absolute;
+  padding: 65px 20px;
+  margin: 0;
+  right: 0;
+}
+
+.header__title {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
 }
 
 .header__top {

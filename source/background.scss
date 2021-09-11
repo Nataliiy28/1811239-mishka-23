@@ -1,9 +1,13 @@
 .background__pic {
-  display: flex;
-  background-image: url(./img/background/mobile_background.jpg);
-  width: 568.48px;
-  height: 373px;
-  background-position: center;
-  background-attachment: fixed;
-
+  // display: flex;
+  // background-image: url(./img/background/mobile_background.jpg);
+  // width: 568.48px;
+  // height: 373px;
+  // background-position: center;
+  // background-attachment: fixed;
+min-height: 100%;
+min-height:  373px;
+width: 100%;
+position: fixed;
+top: 0;
 }
