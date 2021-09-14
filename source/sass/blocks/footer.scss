@@ -1,10 +1,25 @@
 .footer {
   position: relative;
+  padding: 0 30px;
+  background-color: $light-grey;
 }
+
+.footer .container {
+  padding: 0 30px;
+}
+
+.footer__row {
+  text-align: center;
+}
+
 .footer__socials {
-  display: inline-block;
+  padding: 25px 0 27px;
+  border-bottom: 1px solid $dark-grey;
 }
 
 .footer__develop {
-display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 0;
 }

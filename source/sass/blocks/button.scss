@@ -1,9 +1,12 @@
-.button button {
+.button {
   border: 2px solid #444444;
-  background: #FFFFFF;
+  background: #ffffff;
   display: block;
-  margin: 0 auto;
   text-transform: uppercase;
-  width: 260px;
-  height: 52px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 14px 0;
+  cursor: pointer;
 }

@@ -1,0 +1,16 @@
+.map {
+  margin-bottom: 40px;
+}
+
+.map__inner {
+  background-image: url("../../img/map/map_mobile.jpg");
+  background-position: center 0%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 454px;
+  display: flex;
+}
+
+.map__inner iframe {
+  width: 100%;
+}

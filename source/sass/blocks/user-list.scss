@@ -1,15 +1,64 @@
+.user-list {
+  @include tablets {
+    justify-content: flex-end;
+  }
+}
+
 .user-list__item {
   display: block;
-  align-items: center;
-  text-align: center;
-  font-style: normal;
+  // text-align: center;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $basic-dark;
+  box-shadow: 0 1px 0 $medium-grey, inset 0 1px 0 $medium-grey;
+  padding: 28px 0 28px 24%;
+
+  @include tablets {
+    padding: 32px;
+    box-shadow: none;
+
+    &:first-child {
+      border-left: 1px rgba(0, 0, 0, 0.1) solid;
+      border-right: 1px rgba(0, 0, 0, 0.1) solid;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
 
-.user-list__link{
+.user-list__link {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
   color: $basic-dark;
 
+  @include tablets {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.user-list__text--type--cart {
+  @include tablets {
+    margin-left: 28px;
+  }
+}
+
+.user-list__img {
+  position: absolute;
+  width: 21px;
+  left: 30px;
+
+  @include tablets {
+    position: static;
+  }
+}
+
+.user-list__text--type--search {
+  @include tablets {
+    display: none;
+  }
 }

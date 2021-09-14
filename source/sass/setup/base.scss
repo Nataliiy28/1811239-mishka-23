@@ -3,9 +3,19 @@ body {
   font-family: $font-stack;
   font-weight: 400;
   color: $basic-dark;
-
 }
-page-body {
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.page-body {
   color: $basic-dark;
 }
 
@@ -21,9 +31,20 @@ li {
   list-style: none;
 }
 
-
 a {
   display: block;
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

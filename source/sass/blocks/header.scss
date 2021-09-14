@@ -13,21 +13,59 @@
   background-color: $basic-white;
 }
 
+.header__bottom {
+  @include tablets {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/background/tablet_background.jpg");
+  }
+
+  &::after {
+    @include tablets {
+      content: "";
+      display: block;
+      height: 24px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url("../img/icons/zigzag-fill-desktop.svg");
+    }
+  }
+
+}
+
 .header-wrap__title {
   display: inline-block;
   font-size: 24px;
   text-align: center;
-  position: absolute;
-  padding: 65px 20px;
+  padding: 73px 30px 120px;
   margin: 0;
-  right: 0;
+  background-image: url("../img/background/mobile_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include tablets {
+    padding: 154px 50px 372px;
+    background-image: none;
+    width: 100%;
+  }
 }
 
 .header__title {
   position: relative;
   display: inline-block;
-  font-size: 24px;
+  font-size: 27px;
+  line-height: 30px;
   text-align: center;
+  min-width: 260px;
+
+  @include tablets {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }
 
 .header__top {
@@ -42,4 +80,17 @@
 
 .page-header_catalog {
   list-style: none;
+}
+
+.header__top .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 22px 0;
+
+  @include tablets {
+    flex-direction: row;
+    padding: 0 50px;
+  }
 }

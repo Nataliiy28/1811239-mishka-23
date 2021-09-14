@@ -1,0 +1,30 @@
+.contacts .container {
+  padding: 0 30px;
+}
+
+.contacts__title {
+  margin-bottom: 28px;
+}
+
+.contacts__info {
+  margin-bottom: 60px;
+}
+
+.contacts__info li {
+  margin-bottom: 40px;
+  display: flex;
+  line-height: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__text-left {
+  min-width: 76px;
+  display: block;
+}
+
+.contacts__text-underline {
+  border-bottom: 1px solid #62D1BA;
+}

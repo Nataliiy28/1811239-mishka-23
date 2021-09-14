@@ -1,16 +1,14 @@
 .autor__name {
+  display: block;
   font-weight: bold;
   font-size: 17px;
-  margin-left: 17px;
+  line-height: 24px;
+  margin-bottom: 3px;
 }
 
 .autor__email {
+  display: block;
   font-weight: normal;
   font-size: 17px;
-  margin-left: 17px;
-  background: rgba(68, 68, 68, 1);
-  margin-top: 5px;
-  display: block;
-  margin-bottom: 30px;
-
+  line-height: 30px;
 }

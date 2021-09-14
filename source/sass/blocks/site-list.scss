@@ -1,24 +1,60 @@
 .site-list {
-  list-style: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 24px;
-  color: $basic-dark;
+  @include tablets {
+    top: 100%;
+    position: absolute;
+    left: 50px;
+    right: 50px;
+  }
+
+  &.desctop-active {
+    display: none;
+
+    @include desktop {
+      display: flex;
+    }
+  }
 }
 
 .site-list__link {
-  display: block;
-  align-items: center;
-  font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
   color: $basic-dark;
+
+  &--weight--normal {
+    font-weight: normal;
+  }
+
+  @include tablets {
+    font-size: 15px;
+  }
 }
 
 .site-list__item {
-  text-align: center;
+  // text-align: center;
   display: block;
   color: $basic-dark;
+  padding: 28px 0 28px 24%;
+  box-shadow: 0 1px 0 $medium-grey, inset 0 1px 0 $medium-grey;
+
+  &--only--tablet {
+    display: none;
+    margin-left: auto;
+
+    @include tablets {
+      display: block;
+    }
+  }
+
+  @include tablets {
+    padding-left: 0;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    box-shadow: none;
+    margin-right: 45px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

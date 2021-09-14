@@ -1,0 +1,12 @@
+.zigzag {
+  &::after {
+    content: "";
+    background-image: url("../../img/pictograms/zigzag-line-desktop.svg");
+    width: 100%;
+    height: 6px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

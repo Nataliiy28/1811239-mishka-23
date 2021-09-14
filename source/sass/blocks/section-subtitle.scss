@@ -1,7 +1,11 @@
 .section-subtitle {
   color: $basic-green;
   font-size: 17px;
-  margin-top: 31px;
-  text-align: left;
-  margin-left: 25px;
+  margin: 0;
+
+  @include tablets{
+    text-transform: uppercase;
+    max-width: 100px;
+    margin-left: auto;
+  }
 }
