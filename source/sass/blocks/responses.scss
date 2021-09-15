@@ -2,6 +2,21 @@
   padding: 30px;
   position: relative;
   margin-bottom: 38px;
+
+  @include tablets {
+    background-image: url("../../img/background/napkin_background.jpeg");
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    // min-height: 454px;
+    width: 350px;
+    height: 457px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: 3/4;
+    grid-row: 3/4;
+
+  }
 }
 
 .responses__title {

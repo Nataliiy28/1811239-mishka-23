@@ -28,6 +28,7 @@
     margin-bottom: 0;
     text-align: center;
     max-width: 120px;
+    margin-left: auto;
   }
 }
 
@@ -42,6 +43,7 @@
   @include tablets {
     grid-column: span 2;
     grid-row: 3/4;
+    max-width: 292px;
   }
 }
 
@@ -90,5 +92,6 @@
 
   @include tablets{
     grid-column: 1/3;
+    padding-right: 42px;
   }
 }

@@ -11,6 +11,11 @@
   font-weight: bold;
   font-size: 17px;
   color: $basic-dark;
+
+  @include tablets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .about-us__item {
