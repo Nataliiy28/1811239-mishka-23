@@ -13,8 +13,9 @@
     height: 457px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column: 3/4;
+    grid-column: 4/4;
     grid-row: 3/4;
+    grid-template-columns: 200px 200px 200px;
 
   }
 }
