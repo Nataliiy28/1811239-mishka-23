@@ -12,4 +12,18 @@
   cursor: pointer;
   margin-left: 65px;
   margin-bottom: 91px;
+
+  @include tablet {
+    width: 584px;
+    height: 52px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 16px;
+    padding: 18px 0;
+    cursor: pointer;
+    margin-left: 92px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+  }
 }
