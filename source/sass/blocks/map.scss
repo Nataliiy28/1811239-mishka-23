@@ -1,5 +1,9 @@
 .map {
   margin-bottom: 40px;
+
+  @include tablets {
+    margin-bottom: 55px;
+  }
 }
 
 .map__inner {
@@ -9,6 +13,10 @@
   background-repeat: no-repeat;
   min-height: 454px;
   display: flex;
+
+  @include tablets {
+    min-height: 457px;
+  }
 }
 
 .map__inner iframe {

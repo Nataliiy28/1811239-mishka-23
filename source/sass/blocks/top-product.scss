@@ -4,12 +4,19 @@
   position: relative;
 
   @include tablets {
-    padding: 30px;
+    padding-top: 42px;
+    padding-bottom: 70px;
     margin: 0;
     position: relative;
     display: grid;
-    align-items: center;
+    align-items: flex-start;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding-top: 60px;
+    padding-right: 58px;
   }
 }
 
@@ -18,6 +25,18 @@
 
   @include tablets {
     grid-column: 1/4;
+    margin-bottom: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @include desktop {
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 1;
+    align-self: flex-end;
   }
 }
 
@@ -27,8 +46,17 @@
   @include tablets {
     margin-bottom: 0;
     text-align: center;
-    max-width: 120px;
-    margin-left: auto;
+    max-width: 130px;
+    margin-top: 4px;
+  }
+
+  @include desktop {
+    grid-column: 1 /2;
+    grid-row: 1 / 2;
+    margin-right: auto;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    margin-left: 17px;
   }
 }
 
@@ -44,6 +72,12 @@
     grid-column: span 2;
     grid-row: 3/4;
     max-width: 292px;
+    margin: 0;
+    margin-top: 5px;
+  }
+
+  @include desktop {
+    grid-column: 2/4;
   }
 }
 
@@ -52,8 +86,17 @@
 
   @include tablets {
     grid-column: 1/3;
+    margin-top: 37px;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 30px;
+    padding-right: 42px;
   }
 
+  @include desktop {
+    grid-column: 2/4;
+    padding-right: 58px;
+  }
 }
 
 .top-product__price {
@@ -63,6 +106,13 @@
   margin-top: 0;
   text-align: center;
   margin-bottom: 24px;
+
+  @include tablets {
+    margin-bottom: auto;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 24px;
+  }
 }
 
 .top-product__column {
@@ -72,6 +122,10 @@
 
 .top-product__left-column {
   min-width: 97px;
+
+  @include tablets {
+    min-width: initial;
+  }
 }
 
 .top-product__image-catalog {
@@ -85,13 +139,32 @@
   @include tablets {
     grid-column: 3/5;
     grid-row: 2/5;
+    margin-top: 49px;
+    margin-bottom: 0;
+    width: 100%;
+    height: calc(100% - 49px);
+    object-fit: cover;
+  }
+
+  @include desktop {
+    grid-column: 4 / 7;
+    grid-row: 1/ 5;
+    margin-top: 0;
+    height: 100%;
   }
 }
 
-.top-product__buttons{
-
-  @include tablets{
+.top-product__buttons {
+  @include tablets {
     grid-column: 1/3;
     padding-right: 42px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  @include desktop {
+    grid-column: 2/4;
+    padding-right: 58px;
   }
 }

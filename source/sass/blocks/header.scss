@@ -1,96 +1,50 @@
-.font-face {
-  font-family: "Open Sans";
-  font-weight: regular;
-  font-style: normal;
-  font-display: swap;
-  src:
-    url(".") format("woff2"),
-    url("") format("woff");
-}
-
-.header {
-  font-family: $font-stack;
-  background-color: $basic-white;
-}
-
-.header__bottom {
-  @include tablets {
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../img/background/tablet_background.jpg");
-  }
-
-  &::after {
-    @include tablets {
-      content: "";
-      display: block;
-      height: 24px;
-      width: 100%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-image: url("../img/icons/zigzag-fill-desktop.svg");
-    }
-  }
-
-}
-
-.header-wrap__title {
-  display: inline-block;
-  font-size: 24px;
-  text-align: center;
-  padding: 73px 30px 120px;
-  margin: 0;
-  background-image: url("../img/background/mobile_background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @include tablets {
-    padding: 154px 50px 372px;
-    background-image: none;
-    width: 100%;
-  }
-}
-
-.header__title {
+.footer {
   position: relative;
-  display: inline-block;
-  font-size: 27px;
-  line-height: 30px;
-  text-align: center;
-  min-width: 260px;
+  padding: 0 30px;
+  background-color: $light-grey;
 
   @include tablets {
-    font-size: 43px;
-    line-height: 50px;
+    padding: 0;
   }
 }
 
-.header__top {
-  background-color: $basic-white;
-  font-size: 17px;
-  list-style: none;
+.footer__row {
+  text-align: center;
+
+  @include tablets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
 }
 
-.header__logo {
-  background-color: $basic-white;
+.footer__socials {
+  padding: 25px 0 27px;
+  border-bottom: 1px solid $dark-grey;
+
+  @include tablets {
+    border: none;
+    padding: 0;
+  }
 }
 
-.page-header_catalog {
-  list-style: none;
-}
-
-.header__top .container {
+.footer__develop {
   display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  position: relative;
   padding: 22px 0;
 
   @include tablets {
-    flex-direction: row;
-    padding: 0 50px;
+    padding: 0;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @include tablets {
+    display: block;
   }
 }

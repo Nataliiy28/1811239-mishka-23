@@ -1,0 +1,5 @@
+.desctop-hidden {
+  @include desktop {
+    display: none;
+  }
+}

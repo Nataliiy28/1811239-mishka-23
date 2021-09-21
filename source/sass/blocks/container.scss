@@ -3,4 +3,12 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  @include desktop {
+    max-width: 1050px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

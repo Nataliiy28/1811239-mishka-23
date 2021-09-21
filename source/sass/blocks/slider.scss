@@ -1,12 +1,23 @@
-
 .slider__text {
   font-weight: normal;
   font-size: 15px;
+  line-height: 30px;
   color: #000000;
   margin: 0;
   margin-bottom: 33px;
+
+  @include tablets {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 60px;
+  }
 }
 
 .slider__autor {
   color: #000000;
+  font-size: 17px;
+
+  @include tablets {
+    max-width: 70%;
+  }
 }

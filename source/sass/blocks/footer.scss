@@ -2,19 +2,32 @@
   position: relative;
   padding: 0 30px;
   background-color: $light-grey;
-}
 
-.footer .container {
-  padding: 0 30px;
+  @include tablets {
+    padding: 0;
+  }
 }
 
 .footer__row {
   text-align: center;
+
+  @include tablets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
 }
 
 .footer__socials {
   padding: 25px 0 27px;
   border-bottom: 1px solid $dark-grey;
+
+  @include tablets {
+    border: none;
+    padding: 0;
+  }
 }
 
 .footer__develop {
@@ -22,4 +35,16 @@
   justify-content: center;
   align-items: center;
   padding: 22px 0;
+
+  @include tablets {
+    padding: 0;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @include tablets {
+    display: block;
+  }
 }

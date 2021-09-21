@@ -5,25 +5,60 @@
 
   @include tablets {
     background-image: url("../../img/background/napkin_background.jpeg");
-    background-position: left;
-    background-size: cover;
+    background-position: top left;
+    background-size: 350px 457px;
     background-repeat: no-repeat;
-    // min-height: 454px;
-    width: 350px;
-    height: 457px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
     grid-column: 4/4;
     grid-row: 3/4;
-    grid-template-columns: 200px 200px 200px;
-
+    padding-top: 80px;
+    padding-bottom: 130px;
+    margin-bottom: 70px;
   }
 }
 
 .responses__title {
   margin-bottom: 14px;
+
+  @include tablets {
+    grid-column: 1 / 3;
+    margin-bottom: 0;
+  }
+}
+
+.responses__button {
+  @include tablets {
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+    margin-left: auto;
+  }
+}
+
+.responses__pagination {
+  margin-bottom: 38px;
+
+  @include tablets {
+    position: absolute;
+    right: 70px;
+    bottom: 130px;
+    margin-bottom: 0;
+  }
 }
 
 .responses__list {
   margin-bottom: 30px;
+
+  @include tablets {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+
+  @include desktop {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
 }

@@ -1,3 +1,7 @@
 .desctop-active {
-  font-size: 24px;
+  display: none;
+
+  @include desktop {
+    display: flex;
+  }
 }

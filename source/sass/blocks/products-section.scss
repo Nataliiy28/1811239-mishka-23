@@ -29,13 +29,16 @@
 
 .products-section__item {
   width: 100%;
-  height: 103px;
   background-color: $warm-dirty-green;
   color: $basic-white;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
-  padding: 0 30px;
+  padding: 22px 30px 30px;
+
+  @include tablets {
+    padding: 25px 36px 44px;
+  }
 }
 
 .products-section__item:first-child {
